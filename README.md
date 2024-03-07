@@ -17,7 +17,7 @@ When vertical space is at a problem, you can use this module to display a field 
 2. Add a class called "stadium-superscript-label" into the *Container* classes property
 3. Drag a *Label* control into the *Container* control
 4. Add the text you wish to show on the label into the text property
-5. Drag a *Textbox*, a *DropDown* or a *DatePicker* control into the *Container* control
+5. Drag a *CheckBoxList*, *DatePicker*, *DropDown*, *RadioButtonList*, *Textbox* or *UploadFile* control into the *Container* control
 
 ![Controls Setup](images/controls.png)
 

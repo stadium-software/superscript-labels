@@ -1,0 +1,19 @@
+.stadium-superscript-label.container-layout {
+    position: relative;
+
+    .label-container {
+        position: absolute;
+        top: var(--superscript-label-top-position);
+        left: var(--superscript-label-left-position);
+        z-index: 1;
+        user-select: none;
+
+        span {
+            font-size: var(--superscript-label-font-size);
+            font-style: var(--superscript-label-font-style);
+            background-color: var(--superscript-label-backgroundcolor);
+            color: var(--superscript-label-color);
+            white-space: nowrap;
+        }
+    }
+}
