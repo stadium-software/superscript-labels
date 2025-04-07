@@ -1,22 +1,26 @@
 .stadium-superscript-label.container-layout {
     position: relative;
-    margin-top: 6px;
+    margin-top: 0.6rem;
 
     .label-container {
         position: absolute;
-        top: var(--superscript-label-top-position, -11px);
-        left: var(--superscript-label-left-position, 12px);
+        top: var(--superscript-label-top-position, -1.1rem);
+        left: var(--superscript-label-left-position, 1.2rem);
         z-index: 1;
         user-select: none;
 
         span {
             font-size: var(--superscript-label-font-size, var(--FONT-SIZE-SMALLER));
             font-style: var(--superscript-label-font-style, italic);
-            background-color: var(--superscript-label-backgroundcolor, var(--LIGHT-GREY));
-            color: var(--superscript-label-color, var(--DARK-GREY));
+            background-color: var(--superscript-label-backgroundcolor, var(--CHECK-BOX-LIST-CONTAINER-BACKGROUND-COLOR));
+            color: var(--superscript-label-color, var(--BODY-FONT-COLOR));
             white-space: nowrap;
-            padding-right: 6px;
-            padding-left: 6px;
+            padding-right: 0.6rem;
+            padding-left: 0.6rem;
         }
     }
+}
+html {
+    min-height: 100%;
+    font-size: 62.5%;
 }

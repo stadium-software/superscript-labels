@@ -8,6 +8,8 @@ When vertical space is at a problem, you can use this module to display a field 
 
 1.0 - initial
 
+1.0.1 Updated Readme to 6.12+; Converted px to rem
+
 # Setup
 
 ## Application Setup
@@ -24,31 +26,40 @@ When vertical space is at a problem, you can use this module to display a field 
 
 ![Controls Setup](images/controls.png)
 
-## Applying the CSS
+## CSS
+The CSS below is required for the correct functioning of the module. Variables exposed in the [*css-file-variables.css*](css-file-variables.css) file can be [customised](#customising-css).
 
-The CSS below is required for the correct functioning of the module. Some elements can be [customised](#customising-css) using a variables CSS file. 
-
-**Stadium 6.6 or higher**
-
+### Before v6.12
 1. Create a folder called "CSS" inside of your Embedded Files in your application
-2. Drag the two CSS files from this repo [*superscript-label-variables.css*](superscript-label-variables.css) and [*superscript-label.css*](superscript-label.css) into that folder
+2. Drag the two CSS files from this repo [*css-file-variables.css*](css-file-variables.css) and [*css-file.css*](css-file.css) into that folder
 3. Paste the link tags below into the *head* property of your application
-
 ```html
-<link rel="stylesheet" href="{EmbeddedFiles}/CSS/superscript-label.css">
-<link rel="stylesheet" href="{EmbeddedFiles}/CSS/superscript-label-variables.css">
-```
+<link rel="stylesheet" href="{EmbeddedFiles}/CSS/css-file.css">
+<link rel="stylesheet" href="{EmbeddedFiles}/CSS/css-file-variables.css">
+``` 
 
-**Versions lower than 6.6**
+### v6.12+
+1. Create a folder called "CSS" inside of your Embedded Files in your application
+2. Drag the CSS files from this repo [*css-file.css*](css-file.css) into that folder
+3. Paste the link tag below into the *head* property of your application
+```html
+<link rel="stylesheet" href="{EmbeddedFiles}/CSS/css-file.css">
+``` 
 
-1. Copy the CSS from the two css files into the Stylesheet in your application
-
-## Customising CSS
-
-1. Open the CSS file called [*superscript-label-variables.css*](superscript-label-variables.css) from this repo
+### Customising CSS
+1. Open the CSS file called [*css-file-variables.css*](css-file-variables.css) from this repo
 2. Adjust the variables in the *:root* element as you see fit
-3. Overwrite the file in the CSS folder of your application with the customised file
+3. Stadium 6.12+ users can comment out any variable they do **not** want to customise
+4. Add the [*css-file-variables.css*](css-file-variables.css) to the "CSS" folder in the EmbeddedFiles (overwrite)
+5. Paste the link tag below into the *head* property of your application (if you don't already have it there)
+```html
+<link rel="stylesheet" href="{EmbeddedFiles}/CSS/css-file-variables.css">
+``` 
+6. Add the file to the "CSS" inside of your Embedded Files in your application
 
-## CSS Upgrading
+**NOTE: Do not change any of the CSS in the 'css-file.css' file**
 
-To upgrade the CSS in this module, follow the [steps outlined in this repo](https://github.com/stadium-software/samples-upgrading)
+## Upgrading Stadium Repos
+Stadium Repos are not static. They change as additional features are added and bugs are fixed. Using the right method to work with Stadium Repos allows for upgrading them in a controlled manner. 
+
+How to use and update application repos is described here: [Working with Stadium Repos](https://github.com/stadium-software/samples-upgrading)

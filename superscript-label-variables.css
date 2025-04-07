@@ -1,8 +1,8 @@
 :root {
     --superscript-label-color: #555;
-    --superscript-label-font-size: 11px;
+    --superscript-label-font-size: 1.1rem;
     --superscript-label-font-style: italic;
     --superscript-label-backgroundcolor: rgba(255,255,255,.7);
-    --superscript-label-top-position: -11px;
-    --superscript-label-left-position: 12px;
+    --superscript-label-top-position: -1.1rem;
+    --superscript-label-left-position: 1.2rem;
 }
